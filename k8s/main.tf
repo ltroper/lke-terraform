@@ -14,9 +14,9 @@ provider "kubernetes" {
 
 
 
-resource "kubernetes_deployment" "lke-tf-jenkins" {
+resource "kubernetes_deployment" "lke-tf" {
   metadata {
-    name = "lke-tf-poc"
+    name = "lke-tf"
     labels = {
       test = "lke-tf"
       app  = "lke-tf"
@@ -55,10 +55,10 @@ resource "kubernetes_deployment" "lke-tf-jenkins" {
 
 resource "kubernetes_service" "lke-tf" {
   metadata {
-    name = "lke-tf-jenkins"
+    name = "lke-tf"
     labels = {
-      test = "lke-tf-jenkins"
-      app  = "lke-tf-jenkins"
+      test = "lke-tf"
+      app  = "lke-tf"
     }
   }
   spec {
