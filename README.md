@@ -24,7 +24,7 @@ git clone https://github.com/<YOUR-USERNAME>/lke-terraform-demo.git
 2. cd into the infrastructure directory:
 
 ```
-cd infrastructure
+cd infra
 ```
 
 3. Create a terraform.tfvars file with the following variables, replacing the values with your own:
